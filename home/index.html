@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+   
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Strona Boba</title>
+
+	<style type="text/css">
+		.marginalised {
+                text-align: center;
+            }
+			
+		#main-header
+		{
+			text-align: center;
+			background-color: grey;
+			color: white;
+		}
+
+		#main-footer
+		{
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: grey;
+			color: black;
+			text-align: right;
+		}
+	</style>
+
+	<script type="text/javascript" language="javascript">
+		function greetUser(username) 
+		{
+			alert("Witam " + username + "!");
+		}
+	</script>
+	
+</head>
+
+<body>
+	<header id="main-header">
+		<h1>Strona domowa</h1>
+	</header>
+
+	<div class="marginalised">
+			Przywitaj się!
+			<form name="greetUserForm">
+				<input type="text" name="username">
+				<input type="button" value="Go!" onclick="greetUser(document.greetUserForm['username'].value);">
+			</form>
+			<br/ ><br/ >
+		
+	<section id="main-section">
+		<a href="ala/index.php">-> Przejdź do Quizu na stronie Ali</a>
+		<br/ ><br/ >
+		<a href="bob/index.html">-> Przejdź na stronę Boba</a>
+	</section>
+
+	
+</body>
+</html>
