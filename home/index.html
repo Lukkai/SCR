@@ -18,15 +18,9 @@
 			color: white;
 		}
 
-		#main-footer
+		#main-section
 		{
-			position: fixed;
-			left: 0;
-			bottom: 0;
-			width: 100%;
-			background-color: grey;
-			color: black;
-			text-align: right;
+			text-align: center;
 		}
 	</style>
 
@@ -45,18 +39,27 @@
 	</header>
 
 	<div class="marginalised">
-			Przywitaj się!
-			<form name="greetUserForm">
-				<input type="text" name="username">
-				<input type="button" value="Go!" onclick="greetUser(document.greetUserForm['username'].value);">
-			</form>
-			<br/ ><br/ >
+		Przywitaj się!
+		<form name="greetUserForm">
+			<input type="text" name="username">
+			<input type="button" value="Go!" onclick="greetUser(document.greetUserForm['username'].value);">
+		</form>
+	</div>	
+	<br/ ><br/ >
 		
-	<section id="main-section">
-		<a href="ala/index.php">-> Przejdź do Quizu na stronie Ali</a>
+
+		<ul>
+		<li style="color: violet; align=center"><span style="color: violet">
+			Przejdź do Quizu na stronie Ali</span><br />
+			<a href="ala/index.php"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQGU_5xlwHzz0nUiuMbePp9VcH6INaCFa5PBnAuCC1mK9EvV6Q2&usqp=CAU"></a>
+		</li>
 		<br/ ><br/ >
-		<a href="bob/index.html">-> Przejdź na stronę Boba</a>
-	</section>
+		<li style="color: blue"><span style="color: blue">
+			Przejdź na stronę Boba</span><br/ >
+			<a href="bob/index.html"><img src="https://cdn.galleries.smcloud.net/t/galleries/gf-VDt5-Pkub-mkWa_nie-zyje-bob-budowniczy-aktor-podkladajacy-glos-mial-62-lata-664x442-nocrop.jpg"></a>
+		</li>
+		</ul>
+
 
 	
 </body>
